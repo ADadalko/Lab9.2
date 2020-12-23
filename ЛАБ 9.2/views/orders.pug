@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html
+    head
+        title  Расписание
+        meta(charset="utf-8")
+        link(rel="stylesheet", href="style.css")
+    body
+        h2 Расписание
+        table
+            thead
+                tr
+                    th День
+                    th Предмет
+                    th Время
+                    th Фамилия преподавателя
+                    th Аудитория
+            - for (var x = 2; x < result.length; x++)
+                tr
+                    td #{result[x].name}
+                    td #{result[x].lesson}
+                    td #{result[x].time}
+                    td #{result[x].teacher}
+                    td #{result[x].class}
+            tr
+                td #{result[0].name}
+                td #{result[0].lesson}
+                td #{result[0].time}
+                td #{result[0].teacher}
+                td #{result[0].class}
+            tr
+                td #{result[1].name}
+                td #{result[1].lesson}
+                td #{result[1].time}
+                td #{result[1].teacher}
+                td #{result[1].class}
+
+
